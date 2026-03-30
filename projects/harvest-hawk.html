@@ -25,23 +25,31 @@
   <div class="project-hero card">
     <h1>Harvest Hawk</h1>
     <p class="project-subtitle">
-      Agricultural robotics system led from concept through development, integration, and team execution.
+      Agricultural robotics system led from concept through development and execution.
     </p>
   </div>
 
+  <!-- CLICKABLE IMAGE ROW -->
   <div class="harvest-hawk-image-row">
+
     <div class="card image-card-half">
-      <img src="../images/harvest-hawk-1.jpg" alt="Harvest Hawk Project Image">
+      <img src="../images/harvest-hawk-1.jpg"
+           class="expandable-img"
+           alt="Harvest Hawk System">
     </div>
+
     <div class="card image-card-half">
-      <img src="../images/harvest-hawk-data.png" alt="Harvest Hawk Sensor Data">
+      <img src="../images/harvest-hawk-data.png"
+           class="expandable-img"
+           alt="Harvest Hawk Data">
     </div>
+
   </div>
 
   <div class="card">
     <h2>Overview</h2>
     <p>
-      Harvest Hawk is an agricultural robotics system that I originated and led from initial concept through development and execution. The project was created to address real-world agricultural monitoring needs through the integration of sensing, embedded systems, and coordinated subsystem design. As project lead, I was responsible not only for guiding the overall direction of the project, but also for contributing directly to the CAD design, electrical systems, and programming required to bring the system to life.
+      Harvest Hawk is an agricultural robotics system that I originated and led from initial concept through development and execution. The project was created to address real-world agricultural monitoring needs through embedded sensing and system integration.
     </p>
   </div>
 
@@ -50,72 +58,30 @@
 
     <p><strong>Objective 1:</strong> Design and complete robotic and embedded systems solutions that apply to real-world situations and challenges.</p>
     <p>
-      Harvest Hawk meets this objective because it was developed as a complete robotics solution for a real agricultural monitoring problem. The system was designed to sense, collect, and represent useful environmental information in a way that could support real-world agricultural analysis. Because the project moved from concept to implementation and functioned as a practical engineering solution, it demonstrates my ability to design and complete an embedded robotics system for a realistic challenge.
+      This project meets the objective by solving a real agricultural monitoring problem through a completed embedded system that collects and presents environmental data.
     </p>
 
     <p><strong>Objective 2:</strong> Implement a simple microprocessor using digital logic design.</p>
     <p>
-      Harvest Hawk meets this objective by using a microcontroller to manage sensing behavior, process inputs, and support automated system operation. The project required processor-driven control to handle environmental data collection and system response. That demonstrates practical implementation of microprocessor logic within a working embedded engineering application.
+      The system uses a microcontroller to manage sensor inputs and system behavior, demonstrating practical processor-based control.
     </p>
 
-    <p><strong>Objective 5:</strong> Design and analyze real-time embedded systems, including advanced digital logic design, signal processing and highspeed digital systems.</p>
+    <p><strong>Objective 5:</strong> Design and analyze real-time embedded systems.</p>
     <p>
-      Harvest Hawk meets this objective through real-time embedded sensing and data collection. The system continuously gathers environmental data such as temperature, humidity, pressure, and light intensity, requiring the controller to process incoming information and maintain reliable operation as conditions change. The data image shown above serves as evidence that the system produced active measured outputs rather than existing only as a design concept.
+      The system continuously collects and processes environmental data, demonstrating real-time embedded system behavior.
     </p>
 
-    <p><strong>Objective 6:</strong> Implement and evaluate algorithms and methods enabling autonomy in a mobile robot</p>
+    <p><strong>Objective 6:</strong> Implement and evaluate algorithms enabling autonomy.</p>
     <p>
-      Harvest Hawk meets this objective by incorporating automated sensing and embedded decision-making methods that support autonomy-oriented robotic behavior. While the project is more focused on monitoring than on autonomous navigation, it still applies logic-based system behavior that responds to environmental inputs without requiring constant manual control. Evaluating the system through collected outputs and observable functionality demonstrates this objective in practice.
+      The system uses sensor-driven logic to operate without constant manual input, demonstrating autonomy principles.
     </p>
   </div>
 
   <div class="card">
     <h2>Evidence of Functionality</h2>
     <p>
-      The images above provide direct evidence that the project moved beyond planning into implementation. The system image shows the robotics build itself, while the data image shows real measured outputs generated by the embedded system. Together, these demonstrate both physical completion and functional sensor-driven behavior.
+      The system image shows the physical robot, while the data image shows real output from the system, proving functionality.
     </p>
-  </div>
-
-  <div class="card">
-    <h2>Project Evidence</h2>
-
-    <p><strong>GitHub Repository:</strong>
-      <a href="#" target="_blank">Add GitHub Link</a>
-    </p>
-
-    <p><strong>Demo Video:</strong>
-      <a href="#" target="_blank">Add Video Link</a>
-    </p>
-
-    <p><strong>Additional Files:</strong></p>
-    <ul>
-      <li><a href="../images/harvest-hawk-data.png" target="_blank">View Data Screenshot</a></li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Key Contributions</h2>
-    <ul>
-      <li>Created the original project concept and helped define the system vision</li>
-      <li>Led the team throughout the development and implementation process</li>
-      <li>Contributed to CAD design and overall mechanical layout</li>
-      <li>Worked on electrical design and subsystem integration</li>
-      <li>Contributed to programming and control logic development</li>
-      <li>Guided full system coordination to ensure the project functioned as a complete solution</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Skills Demonstrated</h2>
-    <div class="skills-wrap">
-      <span class="skill-pill">Leadership</span>
-      <span class="skill-pill">Systems Engineering</span>
-      <span class="skill-pill">Embedded Systems</span>
-      <span class="skill-pill">CAD Design</span>
-      <span class="skill-pill">Electrical Integration</span>
-      <span class="skill-pill">Programming</span>
-      <span class="skill-pill">Team Coordination</span>
-    </div>
   </div>
 
   <div style="text-align:center; margin-top:20px;">
@@ -124,6 +90,30 @@
 
 </main>
 
+<!-- LIGHTBOX OVERLAY -->
+<div id="lightbox" class="lightbox">
+  <img id="lightbox-img">
+</div>
+
 <script src="../script.js"></script>
+
+<!-- LIGHTBOX SCRIPT -->
+<script>
+const images = document.querySelectorAll(".expandable-img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+images.forEach(img => {
+  img.addEventListener("click", () => {
+    lightbox.style.display = "flex";
+    lightboxImg.src = img.src;
+  });
+});
+
+lightbox.addEventListener("click", () => {
+  lightbox.style.display = "none";
+});
+</script>
+
 </body>
 </html>
