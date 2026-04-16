@@ -6,7 +6,7 @@
   <title>Isaiah Marin | Robotics and Embedded Systems Portfolio</title>
   <meta
     name="description"
-    content="Robotics and Embedded Systems portfolio for Isaiah Marin featuring Smart Desk Fan, Harvest Hawk, Automated Page Turner, Pipe Viper, ModuGrip, and Python Plane Classifier."
+    content="Robotics and Embedded Systems portfolio for Isaiah Marin featuring Smart Temperature-Controlled Desk Fan, Harvest Hawk, Automated Page Turner, Pipe Viper, ModuGrip, and Python Plane Classifier."
   />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -15,7 +15,9 @@
     <div class="container nav-container">
       <a href="index.html" class="logo">Isaiah Marin</a>
 
-      <button class="menu-toggle" id="menu-toggle">☰</button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
 
       <nav class="site-nav" id="site-nav">
         <a href="#home">Home</a>
@@ -28,17 +30,16 @@
   </header>
 
   <main>
-
-    <!-- HERO -->
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div class="hero-text">
           <p class="eyebrow">Robotics and Embedded Systems Portfolio</p>
           <h1>Isaiah Marin</h1>
           <p class="hero-subtext">
-            This portfolio showcases embedded systems, robotics, hardware integration,
-            and software-supported engineering projects. Each project reflects practical
-            design, testing, and real-world problem solving.
+            This portfolio highlights my work in robotics, embedded systems, hardware integration,
+            troubleshooting, control systems, and technical development. The projects shown here
+            reflect both classroom and hands-on engineering work, with an emphasis on building,
+            testing, programming, and refining complete working systems.
           </p>
           <div class="hero-actions">
             <a href="#objectives" class="btn btn-primary">View Objectives</a>
@@ -51,169 +52,229 @@
           <ul>
             <li>Embedded system design</li>
             <li>Microcontroller programming</li>
-            <li>Sensor & actuator integration</li>
+            <li>Sensor and actuator integration</li>
             <li>Mechanical prototyping</li>
-            <li>Testing & iteration</li>
+            <li>Testing and iteration</li>
             <li>Technical communication</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section class="section" id="about">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">About Me</p>
-          <h2>Building real systems through testing and iteration</h2>
+          <h2>Building practical systems that solve real problems</h2>
         </div>
 
         <div class="content-card">
           <p>
-            I am a Robotics and Embedded Systems student focused on building complete,
-            functional systems that combine electronics, software, and mechanical design.
-            My work emphasizes hands-on engineering, including prototyping, debugging,
-            refining designs, and validating results through testing.
+            I am a Robotics and Embedded Systems student with experience building projects that combine
+            software, electronics, and physical design. My work ranges from embedded control systems and
+            assistive devices to inspection systems, agricultural monitoring concepts, and machine learning tools.
+            What connects all of these projects is the same mindset: identify a real problem, design a solution,
+            build something functional, and improve it through testing.
           </p>
           <p>
-            This site is organized around six program objectives, with each objective
-            supported by two projects that demonstrate the required skills and concepts.
+            This site is organized around six program objectives. Each objective includes two projects
+            and explains how those projects demonstrate the specific technical skills and problem-solving
+            approach expected in Robotics and Embedded Systems.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- OBJECTIVES -->
     <section class="section section-alt" id="objectives">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Program Objectives</p>
-          <h2>How my work meets the learning outcomes</h2>
+          <h2>How my work meets the major learning outcomes</h2>
         </div>
 
         <div class="objective-grid">
-
-          <!-- OBJ 1 -->
           <article class="objective-card">
-            <h3>Objective 1: Embedded programming and control logic</h3>
-            <p>These projects demonstrate microcontroller programming, digital I/O, and control systems.</p>
+            <h3>Objective 1: Design and program embedded systems using microcontrollers, digital I/O, and control logic</h3>
+            <p>
+              These projects show my ability to build microcontroller-based systems that combine hardware
+              inputs, outputs, and programmed logic into a working design. In both cases, I had to connect
+              components correctly, write the control code, and verify that the system behaved reliably.
+            </p>
+
             <div class="project-links">
-              <a href="smart-fan.html" class="project-pill">Smart Fan</a>
-              <a href="page-turner.html" class="project-pill">Page Turner</a>
+              <a href="smart-fan.html" class="project-pill">Smart Desk Fan AVR Project</a>
+              <a href="page-turner.html" class="project-pill">Automated Page Turner</a>
             </div>
           </article>
 
-          <!-- OBJ 2 -->
           <article class="objective-card">
-            <h3>Objective 2: Sensor and actuator integration</h3>
-            <p>These projects show combining hardware systems into functional designs.</p>
+            <h3>Objective 2: Integrate sensors, actuators, and electromechanical components into functional systems</h3>
+            <p>
+              These projects demonstrate how I combine motors, sensing elements, and physical mechanisms
+              into complete systems. The focus here is not just wiring parts together, but making the
+              electronic and mechanical sides work together as one solution.
+            </p>
+
             <div class="project-links">
               <a href="harvest-hawk.html" class="project-pill">Harvest Hawk</a>
               <a href="modugrip.html" class="project-pill">ModuGrip</a>
             </div>
           </article>
 
-          <!-- OBJ 3 -->
           <article class="objective-card">
-            <h3>Objective 3: System behavior and control</h3>
-            <p>These projects demonstrate controlled system response and interaction.</p>
+            <h3>Objective 3: Apply control methods, system behavior analysis, and user interaction to embedded solutions</h3>
+            <p>
+              These projects reflect how I design systems that respond to input, change modes, and behave
+              predictably in real use. They show my understanding of how control logic, human interaction,
+              and physical movement come together in a functioning embedded device.
+            </p>
+
             <div class="project-links">
-              <a href="smart-fan.html" class="project-pill">Smart Fan</a>
+              <a href="smart-fan.html" class="project-pill">Smart Desk Fan AVR Project</a>
               <a href="modugrip.html" class="project-pill">ModuGrip</a>
             </div>
           </article>
 
-          <!-- OBJ 4 -->
           <article class="objective-card">
-            <h3>Objective 4: Prototyping and troubleshooting</h3>
-            <p>These projects highlight testing, debugging, and improving designs.</p>
+            <h3>Objective 4: Prototype, test, troubleshoot, and refine robotics or embedded hardware systems</h3>
+            <p>
+              These projects show my ability to work through real build issues and improve a design through
+              testing. They represent hands-on engineering work where iteration mattered, including fixing
+              mechanical behavior, adjusting parts, and validating the final result.
+            </p>
+
             <div class="project-links">
-              <a href="page-turner.html" class="project-pill">Page Turner</a>
+              <a href="page-turner.html" class="project-pill">Automated Page Turner</a>
               <a href="pipe-viper.html" class="project-pill">Pipe Viper</a>
             </div>
           </article>
 
-          <!-- OBJ 5 -->
           <article class="objective-card">
-            <h3>Objective 5: Software and data usage</h3>
-            <p>These projects show how software supports engineering systems.</p>
+            <h3>Objective 5: Use software and data tools to support technical problem-solving and system development</h3>
+            <p>
+              These projects demonstrate how software supports engineering decisions. One project focuses on
+              using Python and machine learning to classify aircraft, while the other uses field data and
+              analysis as part of a larger robotics concept and system evaluation process.
+            </p>
+
             <div class="project-links">
-              <a href="python-ml.html" class="project-pill">Python Classifier</a>
+              <a href="python-ml.html" class="project-pill">Python Plane Classifier</a>
               <a href="harvest-hawk.html" class="project-pill">Harvest Hawk</a>
             </div>
           </article>
 
-          <!-- OBJ 6 -->
           <article class="objective-card">
-            <h3>Objective 6: Technical communication</h3>
-            <p>These projects demonstrate presenting technical work clearly.</p>
+            <h3>Objective 6: Communicate technical work through documentation, demonstrations, and project presentation</h3>
+            <p>
+              These projects show that I can present engineering work clearly through videos, evidence,
+              supporting visuals, and technical explanation. Strong engineering work is not just about
+              building something, it is also about showing how it works and why the design decisions matter.
+            </p>
+
             <div class="project-links">
               <a href="pipe-viper.html" class="project-pill">Pipe Viper</a>
-              <a href="python-ml.html" class="project-pill">Python Classifier</a>
+              <a href="python-ml.html" class="project-pill">Python Plane Classifier</a>
             </div>
           </article>
-
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section class="section" id="projects">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2>Click into each project for full details</h2>
+          <p class="eyebrow">Featured Projects</p>
+          <h2>Project pages with evidence, explanation, and demos</h2>
         </div>
 
         <div class="project-grid">
-
           <article class="project-card">
             <h3>Smart Desk Fan AVR Project</h3>
-            <p>AVR-based embedded system controlling fan speed, servo motion, and sensors.</p>
-            <a href="smart-fan.html" class="text-link">View Project</a><br>
-            <a href="https://github.com/IsaiahMarin/Smart-Fan" target="_blank">GitHub</a>
+            <p>
+              An embedded systems project built around an AVR-based Elegoo Uno R3 that controls a DC motor,
+              servo motor, buzzer, potentiometer, push button, and DHT11 sensor. It demonstrates PWM,
+              ADC, digital I/O, and mode-based behavior using low-level AVR programming.
+            </p>
+            <p class="project-meta">
+              Evidence: schematic, code, build verification, programmed device behavior
+            </p>
+            <a href="smart-fan.html" class="text-link">View project page</a><br>
+            <a href="https://github.com/IsaiahMarin/Smart-Fan" class="text-link" target="_blank">View GitHub</a>
           </article>
 
           <article class="project-card">
             <h3>Harvest Hawk</h3>
-            <p>Crop monitoring system using sensor data and system design.</p>
-            <a href="harvest-hawk.html" class="text-link">View Project</a><br>
-            <a href="https://github.com/IsaiahMarin/Harvest-Hawk" target="_blank">GitHub</a>
+            <p>
+              A robotics-based concept focused on crop monitoring and field analysis. This project reflects
+              system thinking, sensor-driven problem solving, and the use of collected information to support
+              agricultural decision-making.
+            </p>
+            <p class="project-meta">
+              Evidence: project data image, schematic, and supporting explanation
+            </p>
+            <a href="harvest-hawk.html" class="text-link">View project page</a><br>
+            <a href="https://github.com/IsaiahMarin/Harvest-Hawk" class="text-link" target="_blank">View GitHub</a>
           </article>
 
           <article class="project-card">
             <h3>Automated Page Turner</h3>
-            <p>Motorized assistive device with mechanical and embedded design.</p>
-            <a href="page-turner.html" class="text-link">View Project</a><br>
-            <a href="https://github.com/IsaiahMarin/Automated-Page-Turner" target="_blank">GitHub</a>
+            <p>
+              An assistive robotics project designed to turn pages using a motorized mechanism and manual
+              button control. This project required iteration in CAD, physical mounting, control wiring,
+              and testing to improve reliability.
+            </p>
+            <p class="project-meta">
+              Evidence: demo video and design documentation
+            </p>
+            <a href="page-turner.html" class="text-link">View project page</a><br>
+            <a href="https://github.com/IsaiahMarin/Automated-Page-Turner" class="text-link" target="_blank">View GitHub</a>
           </article>
 
           <article class="project-card">
             <h3>Pipe Viper</h3>
-            <p>Inspection camera system for enclosed environments.</p>
-            <a href="pipe-viper.html" class="text-link">View Project</a><br>
-            <a href="https://github.com/IsaiahMarin/Pipe-Viper" target="_blank">GitHub</a>
+            <p>
+              A pipe inspection camera system developed for viewing inside enclosed spaces. This project
+              demonstrates hardware integration, practical design constraints, troubleshooting, and clear
+              technical presentation of a real inspection tool.
+            </p>
+            <p class="project-meta">
+              Evidence: project visuals and system explanation
+            </p>
+            <a href="pipe-viper.html" class="text-link">View project page</a><br>
+            <a href="https://github.com/IsaiahMarin/Pipe-Viper" class="text-link" target="_blank">View GitHub</a>
           </article>
 
           <article class="project-card">
             <h3>ModuGrip</h3>
-            <p>Motorized drawer-opening assistive device with prototyping.</p>
-            <a href="modugrip.html" class="text-link">View Project</a><br>
-            <a href="https://github.com/IsaiahMarin/Modugrip" target="_blank">GitHub</a>
+            <p>
+              A motorized drawer-opening system that combines electronics, mechanical parts, and 3D-printed
+              components into a compact assistive design. This project shows prototyping, testing, revision,
+              and real-world usability goals.
+            </p>
+            <p class="project-meta">
+              Evidence: YouTube demo and prototype documentation
+            </p>
+            <a href="modugrip.html" class="text-link">View project page</a><br>
+            <a href="https://github.com/IsaiahMarin/Modugrip" class="text-link" target="_blank">View GitHub</a>
           </article>
 
           <article class="project-card">
             <h3>Python Plane Classifier</h3>
-            <p>Machine learning project for aircraft classification.</p>
-            <a href="python-ml.html" class="text-link">View Project</a><br>
-            <a href="https://github.com/IsaiahMarin/Plane-Classifier" target="_blank">GitHub</a>
+            <p>
+              A Python-based machine learning project that classifies aircraft imagery. This project
+              demonstrates my ability to use software, logic, and data-driven methods to solve technical
+              problems and present results clearly.
+            </p>
+            <p class="project-meta">
+              Evidence: project demo image and software output
+            </p>
+            <a href="python-ml.html" class="text-link">View project page</a><br>
+            <a href="https://github.com/IsaiahMarin/Plane-Classifier" class="text-link" target="_blank">View GitHub</a>
           </article>
-
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section class="section" id="contact">
       <div class="container">
         <div class="section-heading">
@@ -222,22 +283,22 @@
         </div>
 
         <div class="content-card">
+          <p><strong>Name:</strong> Isaiah Marin</p>
           <p><strong>Email:</strong> isaiahmarin.dev@gmail.com</p>
           <p><strong>Phone:</strong> 480-652-0701</p>
-          <p><strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/isaiahmarin/" target="_blank">
-              linkedin.com/in/isaiahmarin
-            </a>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/isaiahmarin/" target="_blank">linkedin.com/in/isaiahmarin</a></p>
+          <p>
+            Thank you for reviewing my Robotics and Embedded Systems portfolio.
           </p>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 Isaiah Marin</p>
+    <div class="container footer-container">
+      <p>© 2026 Isaiah Marin. All rights reserved.</p>
+      <p>Robotics and Embedded Systems Portfolio</p>
     </div>
   </footer>
 
