@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Desk Fan AVR Project | Isaiah Marin</title>
+  <meta
+    name="description"
+    content="Smart Desk Fan AVR Project by Isaiah Marin featuring PWM motor control, servo oscillation, DHT11 sensing, ADC input, digital I/O, and AVR-based embedded programming."
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Isaiah Marin</a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#objectives">Objectives</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#presentation-script">Presentation Script</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="container">
+        <p class="eyebrow">Embedded Systems Project</p>
+        <h1>Smart Temperature-Controlled Desk Fan</h1>
+        <p class="project-hero-text">
+          This project is an AVR-based embedded system built on an Elegoo Uno R3 using the
+          ATmega328P. It combines a DC motor fan, servo motor, DHT11 sensor, potentiometer,
+          push button, buzzer, transistor motor driver, and diode protection into one working
+          control system. The project demonstrates low-level embedded programming, PWM motor
+          control, ADC input reading, digital I/O, and mode-based behavior in a single design.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#demo-evidence" class="btn btn-primary">View Demo Evidence</a>
+          <a href="#technical-breakdown" class="btn btn-secondary">See Technical Breakdown</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="project-overview-grid">
+          <article class="content-card">
+            <h2>Project Overview</h2>
+            <p>
+              The Smart Desk Fan System was designed to show how an embedded controller can manage
+              multiple outputs and user inputs in a realistic physical system. In automatic mode,
+              the fan behavior is tied to temperature logic while the servo sweeps side to side to
+              simulate oscillation. In manual mode, the potentiometer directly controls fan speed.
+              A push button changes modes, and a buzzer provides audible feedback during operation.
+            </p>
+            <p>
+              What makes this project strong is that it does not just turn a motor on and off. It
+              combines sensing, control logic, timed actuation, and user interaction into a single
+              embedded solution. It also includes a complete schematic, code, and build proof,
+              which makes it one of the strongest examples in this portfolio for embedded systems
+              design and hardware integration.
+            </p>
+          </article>
+
+          <article class="content-card">
+            <h2>Key Skills Demonstrated</h2>
+            <ul class="feature-list">
+              <li>AVR microcontroller programming on ATmega328P</li>
+              <li>PWM control for DC motor speed</li>
+              <li>Servo motor sweep control using timers</li>
+              <li>ADC input reading from a potentiometer</li>
+              <li>Digital I/O for button and buzzer control</li>
+              <li>Sensor integration with DHT11 temperature and humidity readings</li>
+              <li>Mode switching between automatic and manual operation</li>
+              <li>Hardware protection using transistor motor driving and flyback diode</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="demo-evidence">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Demo Evidence</p>
+          <h2>Proof of function and system structure</h2>
+        </div>
+
+        <div class="project-overview-grid">
+          <article class="content-card">
+  <h3>Project Demo Video</h3>
+  <p>
+    This video shows the Smart Desk Fan operating as a complete embedded system.
+    It demonstrates PWM motor control, servo oscillation, and user interaction
+    through both automatic and manual modes.
+  </p>
+
+  <div class="media-frame">
+    <iframe 
+      width="100%" 
+      height="315"
+      src="https://www.youtube.com/embed/yuGu1xCw2uQ"
+      title="Smart Temperature Controlled Desk Fan Demo"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <p class="media-caption">
+    Demo video showing the Smart Temperature-Controlled Desk Fan system in operation.
+  </p>
+</article>
+
+          <article class="content-card">
+            <h3>Circuit Schematic</h3>
+            <p>
+              The schematic shows how the project was wired and how each subsystem connects to the
+              microcontroller. It includes the fan motor driver section, servo wiring, potentiometer
+              input, button input, buzzer output, and power and ground routing.
+            </p>
+
+            <div class="media-frame">
+              <img
+                src="smart-fan-schematic.png"
+                alt="Circuit schematic for the Smart Temperature-Controlled Desk Fan project"
+              />
+            </div>
+
+            <p class="media-caption">
+              Full schematic showing the Arduino-compatible AVR board, motor driver, servo, buzzer,
+              push button, potentiometer, and power connections.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="technical-breakdown">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Technical Breakdown</p>
+          <h2>How the system works</h2>
+        </div>
+
+        <div class="stacked-cards">
+          <article class="content-card">
+            <h3>System Components</h3>
+            <p>
+              The Smart Desk Fan uses an Elegoo Uno R3 with an ATmega328P microcontroller as the
+              main controller. The fan itself is represented by a DC motor, which is driven through
+              a 2N2222 NPN transistor. A 1N4001 diode protects the circuit from back EMF generated
+              by the motor. A servo motor provides the oscillating fan motion, a DHT11 sensor
+              provides temperature and humidity readings, a push button changes modes, a buzzer gives
+              audible feedback, and a potentiometer allows direct user control during manual mode.
+            </p>
+          </article>
+
+          <article class="content-card">
+            <h3>Automatic Mode</h3>
+            <p>
+              In automatic mode, the system reads the DHT11 sensor and uses the embedded logic to
+              determine fan behavior. The fan speed is controlled through PWM, and the servo motor
+              sweeps side to side to simulate the motion of a real oscillating desk fan. This mode
+              demonstrates timer-based control, sensor reading, and output behavior tied to system
+              conditions.
+            </p>
+          </article>
+
+          <article class="content-card">
+            <h3>Manual Mode</h3>
+            <p>
+              In manual mode, the potentiometer becomes the primary control input. The analog value
+              from the potentiometer is read through the AVR ADC and then converted into a PWM duty
+              cycle for the fan motor. This gives the user direct control over fan speed and shows
+              how analog input can be translated into real-time actuator behavior.
+            </p>
+          </article>
+
+          <article class="content-card">
+            <h3>Embedded Programming Features</h3>
+            <p>
+              This project goes beyond simple Arduino-style scripting by using AVR programming
+              concepts directly. The code uses timers for PWM output, register-level configuration
+              for hardware behavior, ADC routines for analog reading, and digital input and output
+              handling for the button and buzzer. The project also includes a custom DHT11 reading
+              routine, which strengthens the embedded systems depth of the design.
+            </p>
+          </article>
+
+          <article class="content-card">
+            <h3>Why This Project Matters</h3>
+            <p>
+              This project is important in my portfolio because it shows that I can design and build
+              a complete embedded system that combines electronics, control logic, user interaction,
+              and real hardware actuation. It is one of my strongest examples of microcontroller
+              programming because it includes both physical hardware integration and a structured
+              control system with multiple operating modes.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Engineering Highlights</p>
+          <h2>What this project demonstrates</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>PWM Motor Control</h3>
+            <p>
+              Fan speed is controlled using Pulse Width Modulation, allowing the motor output to be
+              adjusted instead of simply switched on or off.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Servo Oscillation</h3>
+            <p>
+              The servo sweeps back and forth to simulate the movement of a real desk fan, showing
+              timed motion control and actuator coordination.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Sensor Integration</h3>
+            <p>
+              The DHT11 sensor adds environmental input to the project and shows how a system can
+              read real data and respond through programmed logic.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>ADC Input Handling</h3>
+            <p>
+              The potentiometer is read through analog-to-digital conversion, then translated into
+              usable control values for manual operation.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>User Interaction</h3>
+            <p>
+              The push button and buzzer create a clearer user experience by allowing mode switching
+              and audible confirmation.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Hardware Protection</h3>
+            <p>
+              The transistor driver and flyback diode show proper circuit design practices for
+              safely controlling a motor from a microcontroller.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Objectives Supported</p>
+          <h2>How this project fits the portfolio</h2>
+        </div>
+
+        <div class="stacked-cards">
+          <article class="content-card">
+            <h3>Objective 1: Embedded Systems Design and Programming</h3>
+            <p>
+              This project directly supports embedded systems design because it required me to create
+              a working microcontroller-based system with multiple inputs and outputs. I had to
+              configure hardware behavior, manage timing, and write code that controlled both sensing
+              and actuation in a reliable way.
+            </p>
+          </article>
+
+          <article class="content-card">
+            <h3>Objective 3: Control Methods and Interactive Behavior</h3>
+            <p>
+              This project also supports control methods because it includes both automatic and manual
+              system behavior. The project responds to user input, uses mode switching, and manages
+              actuator output in a predictable way, which makes it a strong example of embedded control
+              logic and system interaction.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Code and Build Evidence</p>
+          <h2>Proof of implementation</h2>
+        </div>
+
+        <div class="project-overview-grid">
+          <article class="content-card">
+            <h3>Programming Evidence</h3>
+            <p>
+              The project includes a complete embedded codebase implementing the fan control logic,
+              servo motion logic, potentiometer input, DHT11 sensor reading, and mode switching.
+              Rather than relying only on simplified libraries, the code demonstrates stronger
+              embedded systems knowledge through timer configuration, PWM use, ADC reading, and
+              digital input and output control.
+            </p>
+          </article>
+
+          <article class="content-card">
+            <h3>Build and Flash Verification</h3>
+            <p>
+              The project documentation includes successful build and programming results, showing
+              that the AVR code compiled, flashed, and verified correctly on the ATmega328 platform.
+              This gives concrete proof that the project was implemented as a working embedded build
+              and not just designed on paper.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="content-card">
+          <h2>Reflection</h2>
+          <p>
+            This project stands out in my portfolio because it shows the kind of embedded systems work
+            I want to continue developing. It combines real circuit design, microcontroller
+            programming, hardware protection, sensor integration, and system behavior into one project.
+            It also reflects a stronger level of engineering depth than a basic prototype because it
+            required multiple subsystems to work together correctly.
+          </p>
+          <p>
+            More than anything, this project shows that I can move beyond single-purpose code and
+            build a complete embedded solution with interaction, control logic, and proof of function.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>© 2026 Isaiah Marin. All rights reserved.</p>
+      <p>Robotics and Embedded Systems Portfolio</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
