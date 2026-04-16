@@ -7,308 +7,92 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-container">
-      <a href="index.html" class="logo">Isaiah Marin</a>
 
-      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
-        ☰
-      </button>
+<div class="site-bg"></div>
 
-      <nav class="site-nav" id="site-nav">
-        <a href="index.html">Home</a>
-        <a href="index.html#objectives">Objectives</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#presentation-script">Presentation Script</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
+<nav class="navbar">
+  <a href="../index.html" class="logo">Isaiah Marin</a>
+  <div class="nav-links">
+    <a href="../index.html#objective1">Objective 1</a>
+    <a href="../index.html#objective5">Objective 5</a>
+    <a href="../index.html#projects">Projects</a>
+  </div>
+</nav>
+
+<main class="section">
+
+  <div class="project-hero card">
+    <h1>Harvest Hawk</h1>
+    <p class="project-subtitle">
+      Agricultural robotics system focused on sensor integration, environmental monitoring, and system-level embedded design.
+    </p>
+  </div>
+
+  <div class="project-image-large card">
+    <img src="../images/harvest-hawk-1.png" alt="Harvest Hawk">
+  </div>
+
+  <div class="project-image-large card">
+    <img src="../images/harvest-hawk-data.png" alt="Harvest Hawk environmental data output">
+  </div>
+
+  <div class="project-image-large card">
+    <img src="../images/harvest-hawk-schematic.png" alt="Harvest Hawk schematic">
+  </div>
+
+  <div class="card">
+    <h2>Overview</h2>
+    <p>
+      Harvest Hawk is a robotics and embedded systems project designed to monitor agricultural conditions through integrated sensing and controller-based system design. The project used an ESP32 as the main controller and connected multiple environmental sensors across a shared I2C bus, including the BMP390, VEML7700, and AM2320. The goal was to build a system that could collect useful field data and support better environmental awareness in agricultural settings.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>How This Meets the Objective</h2>
+    <p>
+      Harvest Hawk supports Objective 1 because it applies embedded systems design to a real-world agricultural monitoring problem. It moved beyond the idea stage and into actual hardware planning, sensor selection, controller integration, and working data collection.
+    </p>
+    <p>
+      It also supports Objective 5 because the system continuously gathers and presents environmental readings such as temperature, humidity, pressure, and light intensity. That makes it a strong example of real-time embedded sensing, where the system must process changing inputs and produce meaningful output over time.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Project Evidence</h2>
+    <p><strong>GitHub Repository:</strong> <a href="https://github.com/IsaiahMarin/Harvest-Hawk" target="_blank">View Harvest Hawk on GitHub</a></p>
+    <p>
+      <strong>Demo Evidence:</strong> The data output image above shows real environmental readings produced by the system, and the schematic shows the planned hardware layout using the ESP32 with a shared I2C sensor bus on GPIO21 for SDA and GPIO22 for SCL.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Key Contributions</h2>
+    <ul>
+      <li>Helped shape the embedded system architecture and sensor layout</li>
+      <li>Worked with multi-sensor integration using an ESP32 controller</li>
+      <li>Supported data collection planning for environmental monitoring</li>
+      <li>Contributed to hardware planning and documentation through schematic development</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Skills Demonstrated</h2>
+    <div class="skills-wrap">
+      <span class="skill-pill">Embedded Systems</span>
+      <span class="skill-pill">ESP32</span>
+      <span class="skill-pill">I2C Integration</span>
+      <span class="skill-pill">Sensor Systems</span>
+      <span class="skill-pill">System Design</span>
+      <span class="skill-pill">Technical Documentation</span>
     </div>
-  </header>
+  </div>
 
-  <main>
-    <section class="project-hero">
-      <div class="container">
-        <p class="eyebrow">Robotics Project</p>
-        <h1>Harvest Hawk</h1>
-        <p class="project-hero-text">
-          Harvest Hawk is an agricultural monitoring concept focused on collecting environmental
-          data that can support smarter field awareness and better decision-making. The project
-          combines embedded systems planning, sensor integration, and system-level design for a
-          robotics-based crop monitoring platform.
-        </p>
+  <div style="text-align:center; margin-top:20px;">
+    <a href="../index.html" class="btn btn-primary">← Back to Portfolio</a>
+  </div>
 
-        <div class="hero-actions">
-          <a href="#demo-evidence" class="btn btn-primary">View Project Evidence</a>
-          <a href="#technical-breakdown" class="btn btn-secondary">See Technical Breakdown</a>
-        </div>
-      </div>
-    </section>
+</main>
 
-    <section class="section">
-      <div class="container">
-        <div class="project-overview-grid">
-          <article class="content-card">
-            <h2>Project Overview</h2>
-            <p>
-              Harvest Hawk was designed as a system that could monitor environmental conditions
-              relevant to agriculture by using an embedded controller and multiple sensors. The
-              goal was to create a platform that could gather useful field data, including
-              atmospheric pressure, altitude-related data, light levels, temperature, and humidity.
-            </p>
-            <p>
-              What makes this project important is not just the idea itself, but the way it applies
-              embedded systems thinking to a real-world problem. It required choosing compatible
-              sensors, planning communication between devices, and structuring the hardware so that
-              the system could scale as more components were added later.
-            </p>
-          </article>
-
-          <article class="content-card">
-            <h2>Key Skills Demonstrated</h2>
-            <ul class="feature-list">
-              <li>Embedded systems planning with an ESP32 microcontroller</li>
-              <li>I2C sensor integration and shared bus design</li>
-              <li>Environmental sensing for agriculture-focused applications</li>
-              <li>Power distribution and wiring layout planning</li>
-              <li>System-level design for future expansion</li>
-              <li>Technical documentation and schematic creation</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="demo-evidence">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Project Evidence</p>
-          <h2>Design proof and sensor integration plan</h2>
-        </div>
-
-        <div class="stacked-cards">
-          <article class="content-card">
-            <h3>Harvest Hawk Schematic</h3>
-            <p>
-              This schematic shows the planned sensor layout for Harvest Hawk using an ESP32 as the
-              main controller. The system connects multiple environmental sensors over a shared I2C
-              communication bus, which reduces wiring complexity while making the design easier to
-              expand.
-            </p>
-
-            <div class="media-frame">
-              <img
-                src="harvest-hawk-schematic.png"
-                alt="Harvest Hawk sensor schematic showing ESP32 connected to BMP390, VEML7700, and AM2320 sensors"
-              />
-            </div>
-
-            <p class="media-caption">
-              Harvest Hawk sensor schematic showing the ESP32 connected to the BMP390 barometric and
-              altitude sensor, VEML7700 lux sensor, and AM2320 temperature and humidity sensor.
-            </p>
-          </article>
-
-          <article class="content-card">
-            <h3>Why This Evidence Matters</h3>
-            <p>
-              This schematic gives concrete proof that the project moved beyond a general concept and
-              into actual hardware planning. It shows the chosen sensors, communication method,
-              signal lines, and power routing. That matters because it demonstrates real embedded
-              systems design decisions rather than just a high-level idea.
-            </p>
-            <p>
-              It also shows that the project was designed with scalability in mind. By using a
-              shared I2C bus, the system can support multiple sensors with fewer control pins and a
-              cleaner layout.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="technical-breakdown">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Technical Breakdown</p>
-          <h2>How the system is structured</h2>
-        </div>
-
-        <div class="stacked-cards">
-          <article class="content-card">
-            <h3>Main Controller</h3>
-            <p>
-              Harvest Hawk uses an ESP32 as the main controller. The ESP32 was selected because it
-              provides strong flexibility for embedded applications, including enough processing
-              capability, useful GPIO access, and support for I2C communication. That made it a
-              good fit for connecting multiple environmental sensors in a single system.
-            </p>
-          </article>
-
-          <article class="content-card">
-            <h3>Sensor Suite</h3>
-            <p>
-              The project uses three main sensors. The BMP390 provides barometric pressure and
-              altitude-related data, the VEML7700 measures ambient light levels, and the AM2320
-              handles temperature and humidity sensing. Together, these components create a more
-              complete environmental picture that could support agricultural monitoring and analysis.
-            </p>
-          </article>
-
-          <article class="content-card">
-            <h3>I2C Communication Design</h3>
-            <p>
-              One of the strongest technical parts of this project is the use of a shared I2C bus.
-              Instead of assigning a separate set of wires for every sensor, the design uses common
-              SDA and SCL lines across the sensor group. This reduces wiring complexity and makes
-              the system easier to organize, troubleshoot, and expand.
-            </p>
-            <p>
-              In the schematic, GPIO21 is used for SDA and GPIO22 is used for SCL. Pull-up
-              resistors are included on both communication lines to support stable I2C operation.
-            </p>
-          </article>
-
-          <article class="content-card">
-            <h3>Power and Signal Layout</h3>
-            <p>
-              The sensor modules are powered from the ESP32’s 3.3V rail, with shared ground across
-              the full system. A decoupling capacitor is included to help stabilize the sensor power
-              line near the BMP390. This reflects proper embedded hardware practice by accounting
-              for signal and power stability, not just basic connectivity.
-            </p>
-          </article>
-
-          <article class="content-card">
-            <h3>Engineering Value</h3>
-            <p>
-              Harvest Hawk demonstrates embedded systems thinking because it required part selection,
-              communication planning, electrical layout decisions, and documentation. Even though the
-              project is presented here as a sensor integration and monitoring concept, it still
-              reflects the real design work needed to build a functioning agricultural robotics
-              platform.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Component Summary</p>
-          <h2>Core hardware used in the design</h2>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card">
-            <h3>ESP32</h3>
-            <p>
-              Serves as the main embedded controller for the system and manages communication with
-              all connected sensors.
-            </p>
-          </article>
-
-          <article class="project-card">
-            <h3>BMP390</h3>
-            <p>
-              Measures barometric pressure and supports altitude-related sensing for environmental
-              monitoring.
-            </p>
-          </article>
-
-          <article class="project-card">
-            <h3>VEML7700</h3>
-            <p>
-              Measures light intensity, which can help track environmental conditions related to
-              field exposure and daylight.
-            </p>
-          </article>
-
-          <article class="project-card">
-            <h3>AM2320</h3>
-            <p>
-              Measures temperature and humidity, adding important atmospheric data to the sensing
-              package.
-            </p>
-          </article>
-
-          <article class="project-card">
-            <h3>I2C Bus</h3>
-            <p>
-              Allows multiple sensors to share the same communication lines, reducing wiring and
-              improving expandability.
-            </p>
-          </article>
-
-          <article class="project-card">
-            <h3>Pull-Up Resistors and Capacitor</h3>
-            <p>
-              Support reliable communication and cleaner power behavior, which helps make the design
-              more stable and technically complete.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Objectives Supported</p>
-          <h2>How this project fits the portfolio</h2>
-        </div>
-
-        <div class="stacked-cards">
-          <article class="content-card">
-            <h3>Objective 2: Integrate Sensors, Actuators, and Electromechanical Components</h3>
-            <p>
-              Harvest Hawk supports this objective because it focuses on integrating multiple sensors
-              into a single embedded platform. The project required choosing compatible hardware and
-              designing a system where those components could operate together through a shared
-              communication method.
-            </p>
-          </article>
-
-          <article class="content-card">
-            <h3>Objective 5: Use Software and Data Tools to Support Technical Problem-Solving</h3>
-            <p>
-              This project also supports data-driven engineering because the entire purpose of the
-              system is to collect useful environmental information that could later support analysis,
-              monitoring, and decision-making. It shows how embedded hardware and data collection can
-              work together as part of a larger technical solution.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt">
-      <div class="container">
-        <div class="content-card">
-          <h2>Reflection</h2>
-          <p>
-            Harvest Hawk is a strong project for my portfolio because it shows systems thinking and
-            practical embedded design in a real application area. Agriculture is a space where
-            sensing, automation, and robotics can make a real difference, and this project reflects
-            how I approached that challenge from both a hardware and engineering perspective.
-          </p>
-          <p>
-            More than anything, this project shows that I can take a concept, break it into actual
-            hardware decisions, and document a system architecture that could be built and expanded
-            in a practical way.
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-container">
-      <p>© 2026 Isaiah Marin. All rights reserved.</p>
-      <p>Robotics and Embedded Systems Portfolio</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
