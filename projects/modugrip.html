@@ -13,9 +13,9 @@
 <nav class="navbar">
   <a href="../index.html" class="logo">Isaiah Marin</a>
   <div class="nav-links">
-    <a href="../index.html#objective1">Objective 1</a>
-    <a href="../index.html#objective3">Objective 3</a>
-    <a href="../index.html#objective4">Objective 4</a>
+    <a href="../index.html#projects">Projects</a>
+    <a href="../index.html#skills">Skills</a>
+    <a href="../index.html#contact">Contact</a>
   </div>
 </nav>
 
@@ -24,111 +24,172 @@
   <div class="project-hero card">
     <h1>ModuGrip</h1>
     <p class="project-subtitle">
-      Motorized drawer-opening system using an Arduino, motor driver, and custom 3D-printed components.
+      Embedded mechanical assist system designed to automate drawer opening using motorized actuation, custom 3D-printed hardware, and Arduino-based control.
     </p>
   </div>
 
   <div class="project-gallery-grid three-up">
     <div class="card">
-      <img src="../images/modugrip-1.png" alt="ModuGrip image 1">
+      <img src="../images/modugrip-1.png" alt="ModuGrip prototype image 1">
     </div>
     <div class="card">
-      <img src="../images/modugrip-2.jpeg" alt="ModuGrip image 2">
+      <img src="../images/modugrip-2.jpeg" alt="ModuGrip prototype image 2">
     </div>
     <div class="card">
-      <img src="../images/modugrip-3.jpeg" alt="ModuGrip image 3">
+      <img src="../images/modugrip-3.jpeg" alt="ModuGrip prototype image 3">
     </div>
     <div class="card">
-      <img src="../images/2B572E51-4F13-4CC6-B517-6E2044CD0AC3.png" alt="ModuGrip schematic">
-    </div>
-
+      <img src="../images/2B572E51-4F13-4CC6-B517-6E2044CD0AC3.png" alt="ModuGrip system schematic">
     </div>
   </div>
 
   <div class="card">
-    <h2>Overview</h2>
+    <h2>Project Overview</h2>
     <p>
-      ModuGrip is a motorized drawer-opening system designed to make opening a drawer easier through embedded control and custom mechanical design. The system uses an Arduino, motor driver, and custom 3D-printed parts to apply pulling force to a drawer through a mounted mechanism. The project focused on building a real working prototype and testing how mechanical design, mounting strength, and force transfer affected performance.
+      ModuGrip is a motorized drawer-opening system developed to explore practical embedded automation and assistive mechanical design. The project combines embedded electronics, motor control, and custom 3D-printed hardware into a functional prototype capable of applying pulling force to open a drawer automatically.
+    </p>
+    <p>
+      The design focused on creating a modular mounting system that could attach to existing furniture without permanent modification. Development centered around force transfer, mounting stability, tension retention, and real-world usability under repeated testing conditions.
     </p>
   </div>
 
   <div class="card">
-    <h2>Objectives Demonstrated</h2>
-
-    <p><strong>Objective 1:</strong> Design and complete robotic and embedded systems solutions that apply to real-world situations and challenges.</p>
+    <h2>Project Specs</h2>
+    <div class="skills-wrap">
+      <span class="skill-pill">Role: Full System Designer</span>
+      <span class="skill-pill">Status: Working Prototype</span>
+      <span class="skill-pill">Platform: Arduino</span>
+      <span class="skill-pill">Actuation: DC Gear Motor</span>
+      <span class="skill-pill">Fabrication: 3D Printing</span>
+      <span class="skill-pill">Focus: Assistive Automation</span>
+    </div>
     <p>
-      ModuGrip meets this objective by addressing a real-world accessibility and convenience problem through a complete embedded-mechanical system. The project applies motors, electronic control, and custom mechanical parts to automate the task of opening a drawer. Because the design moved beyond concept and into a tested physical prototype, it demonstrates my ability to design and build an embedded system solution that responds to a practical need.
-    </p>
-
-    <p><strong>Objective 3:</strong> Demonstrate embedded system design skills, including, but not limited to, microcontroller selection, schematic design, printed circuit board layout, design for electromagnetic compatibility and design for manufacturing.</p>
-    <p>
-      ModuGrip meets this objective by requiring system-level embedded design decisions around microcontroller use, actuator control, mounting design, and manufacturable custom parts. The project involved selecting a controller and motor-driving setup that could realistically power the mechanism while also designing 3D-printed structural parts that could be fabricated, mounted, and tested as part of a usable prototype. This demonstrates embedded design thinking combined with design-for-build considerations.
-    </p>
-
-    <p><strong>Objective 4:</strong> Apply knowledge of transducers, actuators and simultaneous hardware and software development in the design of an embedded system.</p>
-    <p>
-      ModuGrip meets this objective through the integration of actuation, electronics, control behavior, and mechanical design. The motor acts as the system actuator, while the Arduino and motor driver control its behavior. At the same time, the physical parts had to be designed to transfer force effectively without slipping or failing. This required hardware and software development to progress together, since the success of the system depended on both the control logic and the physical design working as one system.
+      This project involved concept development, CAD design, electronics integration, motor control, 3D-printed hardware iteration, physical testing, and prototype failure analysis.
     </p>
   </div>
 
   <div class="card">
-    <h2>Testing and Iteration Findings</h2>
+    <h2>Engineering Challenges</h2>
     <p>
-      Testing showed that the core idea worked, but also revealed several important limitations that needed to be addressed. The system was able to begin opening the drawer, but it eventually lost tension when the pulling mechanism slipped. This showed that while the concept was functional, the force transfer method was not yet reliable enough for repeated use.
+      One of the main challenges was converting motor torque into reliable drawer movement without losing tension. Early testing showed that the system could begin opening the drawer, but maintaining consistent pulling force throughout the full motion cycle was more difficult than expected.
     </p>
     <p>
-      Another issue was the placement of the string in the center of the drawer, which interfered with access and created a usability problem. I also found that the counter clamp needed to be adjusted to better match the counter dimensions so the system could be mounted more securely. In addition, the motor sleeve and mounting method needed improvement because the motor support was not strong enough for long-term stability under load.
+      Another major challenge was mounting stability. Because ModuGrip was designed to clamp onto an existing counter or drawer setup, the mounting hardware needed to resist vibration, torque, and shifting forces without damaging the surface it attached to.
     </p>
-    <p>
-      These testing results were valuable because they identified specific engineering weaknesses in the prototype. Instead of showing failure, they demonstrate iterative design thinking by revealing exactly what has to be improved in the next revision: better tension retention, improved mounting security, revised force routing, and a more robust motor support system.
-    </p>
-  </div>
-
-  <div class="card">
-    <h2>Evidence of Functionality</h2>
-    <p>
-      The images above document the physical prototype and show the mechanical structure, mounting approach, and implementation progress. The project successfully demonstrated that the concept could begin opening the drawer, which validates the core system idea. The testing process also provided direct evidence of how the design behaved under load and what refinements are required to improve reliability.
-    </p>
-  </div>
-
-
-  <div class="card">
-    <h2>Project Evidence</h2>
-     
-     <p>
-        <strong>Github Repository:</strong>
-          <a href="https://github.com/IsaiahMarin/Modugrip" target="_blank">View on Github</a>
-      </p>
-    <p><strong>Demo Video:</strong> 
-<a href="https://youtu.be/M1EdCyFQe2Y" target="_blank">
-Watch ModuGrip in action
-</a>
-</p>
-
-<p><strong>Demo Evidence:</strong> The video demonstrates the ModuGrip system applying motor-driven force to initiate drawer movement. Testing confirmed that the system could begin opening the drawer, while also revealing mechanical limitations such as tension loss and mounting stability, which informed further design improvements.</p>
-
-  <div class="card">
-    <h2>Key Contributions</h2>
     <ul>
-      <li>Designed the overall drawer-opening concept and system layout</li>
-      <li>Integrated Arduino control with motor driver and actuator behavior</li>
-      <li>Created custom 3D-printed components for mounting and force transfer</li>
-      <li>Tested the prototype under real use conditions and documented failure points</li>
-      <li>Identified design improvements for mounting security, motor support, and tension retention</li>
+      <li>Preventing string or cable misalignment during operation</li>
+      <li>Designing 3D-printed parts strong enough to resist motor stress</li>
+      <li>Balancing compact form factor with structural rigidity</li>
+      <li>Improving accessibility without blocking normal drawer use</li>
+      <li>Reducing mechanical slip during repeated operation cycles</li>
     </ul>
   </div>
 
   <div class="card">
-    <h2>Skills Demonstrated</h2>
+    <h2>System Design</h2>
+    <p>
+      ModuGrip uses an Arduino-based embedded control setup paired with a motor driver and DC gear motor to generate controlled pulling force. Custom 3D-printed components were designed to secure the motor assembly, guide force direction, and clamp the system onto a counter surface.
+    </p>
+    <p>
+      The mechanical design uses a tension-based pulling mechanism that converts rotational motor motion into linear drawer movement. Multiple printed revisions were created to improve motor alignment, clamp strength, and force distribution across the system.
+    </p>
+    <ul>
+      <li>Arduino microcontroller control</li>
+      <li>Motor driver integration</li>
+      <li>DC gear motor actuation</li>
+      <li>Custom 3D-printed mounting hardware</li>
+      <li>Mechanical tension routing system</li>
+      <li>Embedded power and control wiring</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Testing & Iteration</h2>
+    <p>
+      Real-world testing confirmed that the system could successfully initiate drawer movement, validating the core design concept and actuator approach.
+    </p>
+    <p>
+      Repeated testing also exposed several mechanical weaknesses that required redesign. The tension system occasionally slipped under load, reducing pulling efficiency and preventing reliable full-range operation. Clamp dimensions also needed adjustment to improve mounting stability across different surfaces.
+    </p>
+    <ul>
+      <li>Motor support structures needed reinforcement under sustained load</li>
+      <li>Force routing placement affected overall usability</li>
+      <li>Printed parts experienced stress near mounting points</li>
+      <li>Mounting geometry needed refinement for better alignment</li>
+      <li>Tension retention became the main focus for future revisions</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Results & Findings</h2>
+    <p>
+      ModuGrip successfully demonstrated that a compact embedded-mechanical system could automate the initial opening motion of a standard drawer using low-cost hardware and custom fabrication methods.
+    </p>
+    <p>
+      The prototype also showed how important mechanical reliability is when designing embedded systems that interact with the physical world. While the system still needs refinement, testing produced valuable engineering findings around mounting stability, force transfer, and tension management.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Future Improvements</h2>
+    <p>
+      The next revision of ModuGrip would focus on improving reliability, reducing mechanical slip, and making the system easier to mount across different drawer and counter setups.
+    </p>
+    <ul>
+      <li>Redesign the tension system to maintain stronger grip during the full drawer-opening motion</li>
+      <li>Reinforce the motor sleeve and mounting bracket to handle load and vibration more effectively</li>
+      <li>Improve clamp geometry for more secure attachment to different counter lips</li>
+      <li>Route the pulling line away from the center of the drawer to improve usability</li>
+      <li>Add limit detection or current sensing to reduce motor strain at end-of-travel</li>
+      <li>Refine the enclosure and wiring layout for a cleaner final prototype</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Technologies Used</h2>
     <div class="skills-wrap">
       <span class="skill-pill">Arduino</span>
       <span class="skill-pill">Embedded Systems</span>
-      <span class="skill-pill">Mechanical Design</span>
-      <span class="skill-pill">3D Printing</span>
       <span class="skill-pill">Motor Control</span>
-      <span class="skill-pill">Testing and Iteration</span>
+      <span class="skill-pill">3D Printing</span>
+      <span class="skill-pill">Mechanical Design</span>
+      <span class="skill-pill">Rapid Prototyping</span>
+      <span class="skill-pill">CAD Modeling</span>
+      <span class="skill-pill">Hardware Integration</span>
+      <span class="skill-pill">Testing & Iteration</span>
       <span class="skill-pill">Problem Solving</span>
     </div>
+  </div>
+
+  <div class="card">
+    <h2>Project Links</h2>
+    <p>
+      <strong>GitHub Repository:</strong>
+      <a href="https://github.com/IsaiahMarin/Modugrip" target="_blank">
+        View Source Code
+      </a>
+    </p>
+    <p>
+      <strong>Demo Video:</strong>
+      <a href="https://youtu.be/M1EdCyFQe2Y" target="_blank">
+        Watch Prototype Demonstration
+      </a>
+    </p>
+    <p>
+      The demonstration video shows the prototype applying motor-driven force to initiate drawer movement while also documenting mechanical limitations discovered during testing.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Key Contributions</h2>
+    <ul>
+      <li>Designed the overall embedded-mechanical system architecture</li>
+      <li>Developed custom 3D-printed mounting and motor support components</li>
+      <li>Integrated embedded motor control hardware and actuator systems</li>
+      <li>Performed real-world testing and iterative mechanical redesigns</li>
+      <li>Analyzed force transfer behavior and prototype reliability limitations</li>
+      <li>Documented engineering findings and future improvement paths</li>
+    </ul>
   </div>
 
   <div style="text-align:center; margin-top:20px;">

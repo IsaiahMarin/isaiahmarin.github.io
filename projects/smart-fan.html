@@ -13,9 +13,9 @@
 <nav class="navbar">
   <a href="../index.html" class="logo">Isaiah Marin</a>
   <div class="nav-links">
-    <a href="../index.html#objective2">Objective 2</a>
-    <a href="../index.html#objective3">Objective 3</a>
     <a href="../index.html#projects">Projects</a>
+    <a href="../index.html#skills">Skills</a>
+    <a href="../index.html#contact">Contact</a>
   </div>
 </nav>
 
@@ -24,61 +24,202 @@
   <div class="project-hero card">
     <h1>Smart Temperature-Controlled Desk Fan</h1>
     <p class="project-subtitle">
-      AVR-based embedded systems project using temperature sensing, PWM fan control, servo movement, and multi-mode logic.
+      AVR-based embedded control system using temperature sensing, PWM fan control, servo movement, user input, and multi-mode system logic.
     </p>
   </div>
 
   <div class="project-image-large card">
-    <img src="../images/smart-fan-schematic.png" alt="Smart Fan schematic">
+    <img src="../images/smart-fan-schematic.png" alt="Smart Temperature-Controlled Desk Fan schematic">
   </div>
 
   <div class="card">
-    <h2>Overview</h2>
+    <h2>Project Overview</h2>
+
     <p>
-      The Smart Temperature-Controlled Desk Fan is an embedded systems project built around an Arduino-compatible Elegoo Uno R3 using the ATmega328P. The code was rebuilt in AVR C for Microchip Studio and uses a DHT11 on D4, PWM fan control on D11, a servo on D9, a mode button on D2, a buzzer on D6, and a potentiometer on A1. The system was designed to combine multiple inputs and outputs into a working smart fan platform with both automatic and user-controlled behavior.
+      The Smart Temperature-Controlled Desk Fan is an embedded systems project built around an Arduino-compatible Elegoo Uno R3 using the ATmega328P microcontroller. The system reads temperature data, processes user input, and controls multiple outputs including fan speed, servo movement, and buzzer feedback.
+    </p>
+
+    <p>
+      The project was originally developed as an Arduino-style embedded system and later rebuilt in AVR C using Microchip Studio. This made the project stronger technically because the system behavior was implemented closer to the microcontroller level instead of relying only on simplified Arduino functions.
+    </p>
+
+    <p>
+      The final system demonstrates practical embedded control by combining sensor input, PWM output, ADC input, button logic, and actuator behavior into one complete smart fan platform.
     </p>
   </div>
 
   <div class="card">
-    <h2>How This Meets the Objective</h2>
+    <h2>Project Specs</h2>
+
+    <div class="skills-wrap">
+      <span class="skill-pill">Role: Embedded Systems Developer</span>
+      <span class="skill-pill">Controller: ATmega328P</span>
+      <span class="skill-pill">Board: Elegoo Uno R3</span>
+      <span class="skill-pill">Language: AVR C</span>
+      <span class="skill-pill">IDE: Microchip Studio</span>
+      <span class="skill-pill">Focus: Smart Fan Control</span>
+    </div>
+
     <p>
-      This project supports Objective 2 because it demonstrates processor-driven logic through structured embedded programming. The controller reads sensor and user inputs, evaluates the system state, and drives outputs such as PWM fan speed, servo movement, and buzzer feedback.
-    </p>
-    <p>
-      It also supports Objective 3 because it shows complete embedded system design, including hardware selection, pin mapping, actuator integration, sensor input, and schematic-based planning. The project required coordinating multiple components into one reliable embedded system rather than treating each part separately.
+      This project included embedded C programming, hardware pin mapping, schematic planning, sensor integration, PWM fan control, analog input handling, servo output, button-based mode switching, buzzer feedback, and system testing.
     </p>
   </div>
 
   <div class="card">
-    <h2>Project Evidence</h2>
-    
-    <p><strong>Demo Video:</strong> <a href="https://youtube.com/shorts/yuGu1xCw2uQ" target="_blank">Watch Smart Fan Demo</a></p>
-    <p><strong>GitHub Repository:</strong> <a href="https://github.com/IsaiahMarin/Smart-Fan" target="_blank">View Smart Fan on GitHub </a></p>
+    <h2>Engineering Challenges</h2>
+
     <p>
-      <strong>Demo Evidence:</strong> The schematic above documents the full hardware layout, and the linked video demonstrates the programmed behavior of the system in operation.
+      One of the main challenges was coordinating several inputs and outputs at the same time without turning the project into separate disconnected features. The system needed to read temperature data, respond to a mode button, process potentiometer input, control fan speed, move a servo, and trigger buzzer feedback in a structured way.
+    </p>
+
+    <p>
+      Another challenge was rebuilding the behavior in AVR C. This required more direct control over the ATmega328P’s embedded features and forced the system logic to be organized around registers, timing, pin behavior, and hardware-level control.
+    </p>
+
+    <ul>
+      <li>Reading temperature input from the DHT11 sensor</li>
+      <li>Controlling fan speed with PWM output</li>
+      <li>Using ADC input from a potentiometer for manual control</li>
+      <li>Managing servo movement alongside fan behavior</li>
+      <li>Handling button-based mode switching</li>
+      <li>Providing buzzer feedback for system events</li>
+      <li>Keeping all components organized in one reliable embedded system</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>System Design</h2>
+
+    <p>
+      The Smart Fan uses the ATmega328P as the main embedded controller. A DHT11 temperature sensor provides environmental input, while a potentiometer gives the user manual control through analog input. A button is used to switch operating modes, allowing the fan to respond differently depending on the selected behavior.
+    </p>
+
+    <p>
+      Output behavior includes PWM fan speed control, servo positioning, and buzzer feedback. The fan is controlled through a PWM signal on D11, the servo is connected to D9, the mode button is connected to D2, the buzzer is connected to D6, the DHT11 sensor is connected to D4, and the potentiometer is connected to A1.
+    </p>
+
+    <p>
+      The schematic documents the full wiring layout and shows how each input and output connects into the embedded control system.
+    </p>
+
+    <ul>
+      <li>ATmega328P used as the main microcontroller</li>
+      <li>DHT11 temperature sensor used for environmental input</li>
+      <li>PWM signal used to control fan speed</li>
+      <li>Potentiometer used as an analog user input</li>
+      <li>Servo used for physical movement behavior</li>
+      <li>Button input used for mode selection</li>
+      <li>Buzzer used for feedback and alert behavior</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Testing & Iteration</h2>
+
+    <p>
+      Testing focused on confirming that each subsystem worked independently and then verifying that the full system behaved correctly when all components were combined. The fan control, temperature sensing, servo movement, button input, potentiometer input, and buzzer output all needed to work together without conflicting.
+    </p>
+
+    <p>
+      Rebuilding the code in AVR C also required iterative testing because low-level embedded behavior can be less forgiving than higher-level Arduino code. Pin configuration, timing behavior, PWM setup, and input reading all needed to be checked carefully.
+    </p>
+
+    <ul>
+      <li>Verified temperature readings from the DHT11 sensor</li>
+      <li>Tested PWM output behavior for fan control</li>
+      <li>Confirmed potentiometer input through ADC behavior</li>
+      <li>Tested mode switching through the button input</li>
+      <li>Checked servo movement and buzzer feedback</li>
+      <li>Validated the system using the schematic and demo video</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Results & Findings</h2>
+
+    <p>
+      The Smart Temperature-Controlled Desk Fan successfully demonstrated a complete embedded control system using the ATmega328P. The project combined multiple inputs and outputs into one working platform and showed how a microcontroller can process sensor data, user input, and actuator behavior.
+    </p>
+
+    <p>
+      A major result of the project was the successful transition from a basic embedded prototype into an AVR C implementation. This improved the technical depth of the project and made it a stronger example of microcontroller-level programming, hardware control, and embedded design.
+    </p>
+
+    <p>
+      The project is a strong portfolio example because it shows both software and hardware integration: the code controls real components, the schematic documents the system, and the demo video shows the behavior in operation.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Future Improvements</h2>
+
+    <p>
+      Future versions of the Smart Fan could improve the system’s usability, reliability, and appearance by adding more advanced feedback and cleaner hardware packaging.
+    </p>
+
+    <ul>
+      <li>Add an OLED or LCD display to show temperature, fan speed, and current mode</li>
+      <li>Create a cleaner enclosure for the circuit and fan hardware</li>
+      <li>Add stronger power handling for a larger fan motor</li>
+      <li>Improve temperature smoothing to reduce sudden fan speed changes</li>
+      <li>Add EEPROM memory to save the last selected mode</li>
+      <li>Use a more accurate temperature and humidity sensor in a future revision</li>
+      <li>Add serial output for debugging and live system monitoring</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Technologies Used</h2>
+
+    <div class="skills-wrap">
+      <span class="skill-pill">AVR C</span>
+      <span class="skill-pill">ATmega328P</span>
+      <span class="skill-pill">Microchip Studio</span>
+      <span class="skill-pill">Embedded Systems</span>
+      <span class="skill-pill">PWM Control</span>
+      <span class="skill-pill">ADC Input</span>
+      <span class="skill-pill">DHT11 Sensor</span>
+      <span class="skill-pill">Servo Control</span>
+      <span class="skill-pill">Button Input</span>
+      <span class="skill-pill">Schematic Design</span>
+      <span class="skill-pill">Hardware Integration</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Project Links</h2>
+
+    <p>
+      <strong>Demo Video:</strong>
+      <a href="https://youtube.com/shorts/yuGu1xCw2uQ" target="_blank">
+        Watch Smart Fan Demo
+      </a>
+    </p>
+
+    <p>
+      <strong>GitHub Repository:</strong>
+      <a href="https://github.com/IsaiahMarin/Smart-Fan" target="_blank">
+        View Source Code
+      </a>
+    </p>
+
+    <p>
+      <strong>Demo Evidence:</strong>
+      The schematic above documents the full hardware layout, and the linked video demonstrates the programmed smart fan behavior in operation.
     </p>
   </div>
 
   <div class="card">
     <h2>Key Contributions</h2>
-    <ul>
-      <li>Rebuilt the project code as AVR C in Microchip Studio</li>
-      <li>Integrated sensor input, PWM fan control, servo movement, and user-controlled mode selection</li>
-      <li>Mapped hardware connections and system behavior through a complete schematic</li>
-      <li>Developed a multi-input embedded control system with practical output behavior</li>
-    </ul>
-  </div>
 
-  <div class="card">
-    <h2>Skills Demonstrated</h2>
-    <div class="skills-wrap">
-      <span class="skill-pill">AVR C</span>
-      <span class="skill-pill">ATmega328P</span>
-      <span class="skill-pill">PWM Control</span>
-      <span class="skill-pill">ADC Input</span>
-      <span class="skill-pill">Sensor Integration</span>
-      <span class="skill-pill">Embedded Design</span>
-    </div>
+    <ul>
+      <li>Rebuilt the project code in AVR C using Microchip Studio</li>
+      <li>Mapped and documented the full embedded hardware layout</li>
+      <li>Integrated temperature sensing, PWM fan control, servo movement, and buzzer feedback</li>
+      <li>Implemented user-controlled mode selection using button input</li>
+      <li>Used ADC input from a potentiometer for manual system control</li>
+      <li>Tested and documented the system through schematic and demo evidence</li>
+    </ul>
   </div>
 
   <div style="text-align:center; margin-top:20px;">
@@ -89,8 +230,4 @@
 
 <script src="../script.js"></script>
 </body>
-
-
-
-
 </html>
